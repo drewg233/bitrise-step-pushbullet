@@ -1,0 +1,44 @@
+# *******************
+# * PUSHBULLET STEP *
+# *******************
+
+title: |-
+  pushbullet
+summary: |
+  Get a push notification whenever a build finishes
+description: |
+  This step will send a push notification via PushBullet to your devices.
+website: https://github.com/kawaiseb/bitrise-step-pushbullet
+source_code_url: https://github.com/kawaiseb/bitrise-step-pushbullet
+support_url: https://github.com/kawaiseb/bitrise-step-pushbullet/issues
+host_os_tags:
+  - osx-10.10
+  - ubuntu-16.04
+
+type_tags:
+  - utility
+
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+run_if: ""
+
+deps:
+
+toolkit:
+  bash:
+    entry_file: step.sh
+
+inputs:
+  - pushbullet_access_token:
+    opts:
+      title: "Push Bullet Access Token"
+      summary: Provides access to send push notifications to your devices.
+      description: |
+        Can be obtained from https://www.pushbullet.com/#settings/account
+      is_expand: true
+      is_required: true
+      value_options: []
+
+outputs:
+        
