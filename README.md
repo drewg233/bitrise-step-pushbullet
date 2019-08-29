@@ -1,43 +1,24 @@
-# bitrise-step-wetransfer
+# bitrise-step-pushbullet
 
-This wonderfull step send files to wetransfer.
+This step provides you with the ability to send push notifications to your devices whenever your build finishes.
 
-Store the files you want to send to a directory. Indicate the directory in question in the step. All files in the directory will be sent to wetranfer and accessible to the recipient for download via a short url.
+## Getting Started
 
-## Limitations
+Go to pushbullet.com and sign up. After being logged in:
 
-The limit for sending files is *2 GB* at wetransfer in the free version.
+Go to `Settings` > `Account` > `Create Access Token`. And keep that access token handy.
 
-Files are available for *7 days*.
+Next add your devices by:
 
-If you try to send too many files to wetransfer in a short time, wetransfer will send you an error.
+Going to `Devices` > `Add a device` and follow the instructions for the type of device you would like to add.
 
+## Bitrise Setup
 
-## Upcoming improvements
+Add the *pushbullet* step at the end of your workflow.
 
-Don't hesite to propose improvements [here](https://github.com/kawaiseb/bitrise-step-wetransfer/issues)
+Initialize the one input variable needed in the form.
 
-Or directly a PR :)
+* PushBullet Access Token **required**
 
-## How to use this Step
-
-Add the *wetransfer* step into your worflow.
-
-Initialize inputs variables from the bitrise form.
-
-* Email of the sender `$WTU_MAILSENDER` **required**
-* One or more email separated by coma for receiver `$WTU_MAILRECEIVER` **required**
-* The path where are stored one or more files to upload `$WTU_FILEPATH` **required**
-
-If in the target directory there is more than one file, these files will be compressed into a zip archive.
-
-* A little body for the mail `$WTU_MESSAGE` **required**
-* The language of the wetransfer receiver, *fr* for french (default) or *en* for english.
-* Debug mode, *yes* or *no* (default)
-
-Prints additional debug information in logs if this option is enabled
-
-## Credit
-
-![PagesJaunes](docs/pagesjaunes.png)
+Thats it!
 

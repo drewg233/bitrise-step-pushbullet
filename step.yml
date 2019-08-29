@@ -8,9 +8,9 @@ summary: |
   Get a push notification whenever a build finishes
 description: |
   This step will send a push notification via PushBullet to your devices.
-website: https://github.com/kawaiseb/bitrise-step-pushbullet
-source_code_url: https://github.com/kawaiseb/bitrise-step-pushbullet
-support_url: https://github.com/kawaiseb/bitrise-step-pushbullet/issues
+website: https://github.com/drewg233/bitrise-step-pushbullet
+source_code_url: https://github.com/drewg233/bitrise-step-pushbullet
+support_url: https://github.com/drewg233/bitrise-step-pushbullet/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04

@@ -11,7 +11,7 @@ app:
   - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/drewg233/bitrise-steplib
 
   # To test change push bullet access token here and run bitrise run test
-  - TEST_PUSHBULLET_ACCESS_TOKEN: "o.99YHcLk3NvLIZXAsRoPys9OjqpsfXDnW"
+  - TEST_PUSHBULLET_ACCESS_TOKEN: ""
   - PB_FILEPATH: "/tmp/pushbullet"
 
 workflows:
